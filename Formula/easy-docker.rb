@@ -1,25 +1,25 @@
 class EasyDocker < Formula
   desc "A fast, lightweight, and modern TUI for managing Docker containers, images, volumes, and networks built in Rust."
   homepage "https://github.com/brunopassosaun/easy-docker"
-  version "0.1.7"
+  version "0.1.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.7/easy-docker-aarch64-apple-darwin.tar.xz"
-      sha256 "19305ee32f21fa763921f24bd7d1c27dd3d0e7c93d48eaba3c48ef3a29047943"
+      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.8/easy-docker-aarch64-apple-darwin.tar.xz"
+      sha256 "e0c6789a806388c5e95811f07c59c0215559f7fdba020b1492fa4f87e3dbe5f8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.7/easy-docker-x86_64-apple-darwin.tar.xz"
-      sha256 "071379c820c048d05d2f5c7143ec4c80ae1b6e32cb888cc6ba3d0e479c692d79"
+      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.8/easy-docker-x86_64-apple-darwin.tar.xz"
+      sha256 "b50298f97612e715696eec703775c7895b04d2c122f86d7c4158a5d0b4a35dc3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.7/easy-docker-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6f3cca4b758fb5660e34ed65bf14b42a031966c8151ffbe633e327f7f7ead17f"
+      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.8/easy-docker-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e6a52df7a6fda21aa101a50f54d3128ce09d5239bc13a83fb7ea6a451ad171d1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.7/easy-docker-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "21efc458c37d7e7a79531b591a54e3d1d95160071f25d1c6cc8d045f2fc58d23"
+      url "https://github.com/brunopassosaun/easy-docker/releases/download/v0.1.8/easy-docker-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "88b434f23f80a4a86fc08dcc45ffb97c6352deebcaa4b79ff8bb4ef5e44e7ac5"
     end
   end
   license "MIT"
