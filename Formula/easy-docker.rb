@@ -1,25 +1,25 @@
 class EasyDocker < Formula
   desc "A fast, lightweight, and modern TUI for managing Docker containers, images, volumes, and networks built in Rust."
   homepage "https://github.com/Brunopaun/easy-docker"
-  version "0.1.8"
+  version "0.1.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.8/easy-docker-aarch64-apple-darwin.tar.xz"
-      sha256 "e0c6789a806388c5e95811f07c59c0215559f7fdba020b1492fa4f87e3dbe5f8"
+      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.9/easy-docker-aarch64-apple-darwin.tar.xz"
+      sha256 "33ec930a38cdb3a8453e9417301df93a0ec6ea5ed446bbddca466f416be5c2be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.8/easy-docker-x86_64-apple-darwin.tar.xz"
-      sha256 "b50298f97612e715696eec703775c7895b04d2c122f86d7c4158a5d0b4a35dc3"
+      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.9/easy-docker-x86_64-apple-darwin.tar.xz"
+      sha256 "03ad543e257a0c4df07d36b380502f7c0b6cec1414190f124068e25498ef0c1e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.8/easy-docker-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e6a52df7a6fda21aa101a50f54d3128ce09d5239bc13a83fb7ea6a451ad171d1"
+      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.9/easy-docker-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9d0aac0bf226346aa4c83abcf3d122cb3b232d75958be2377e260e6919e9b8be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.8/easy-docker-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "88b434f23f80a4a86fc08dcc45ffb97c6352deebcaa4b79ff8bb4ef5e44e7ac5"
+      url "https://github.com/Brunopaun/easy-docker/releases/download/v0.1.9/easy-docker-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "90fcf27ab079bd130af9455b49778ecb3efc395cfebdf3b5f583d3eaff13ca29"
     end
   end
   license "MIT"
